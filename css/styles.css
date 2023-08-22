@@ -1,0 +1,277 @@
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #282a35;
+  color: #ffffff;
+}
+
+header {
+  height: 50px;
+  background-color: #282a35;
+}
+
+.container {
+  min-height: calc(100% - 80px);
+  color: #000;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-size: 20px;
+  background-color: #282a35;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: medium;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+label {
+  display: block;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+iframe {
+  width: 80%;
+  height: 80%;
+}
+
+.wrapper {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: calc(50% - 6px) calc(50% - 6px);
+  gap: 12px;
+}
+
+.wrapper-option {
+  width: 100%;
+  display: inline-table;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  bottom: 412px;
+}
+
+.carousel slide {
+  width: 50%;
+  height: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-size: 20px;
+  background-color: #282a35;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 30px;
+
+}
+
+/* .wrapper  {
+  list-style: none;
+}
+
+.wrapper-item {
+  height: auto;
+  border-bottom: 2px dashed blue;
+
+}
+
+.wrapper-item-body {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+
+}
+
+
+.wrapper-item-phone {
+  height: 360px;
+} */
+
+.ol,
+ul {
+  margin: 0;
+  margin-bottom: 48px;
+  bottom: 150px;
+}
+
+.followimgflex div,
+.followimgflex img {
+  width: 95px;
+  height: 91px;
+}
+
+.followimgflex .ytimg {
+  background-image: url(https://images.hindustantimes.com/auto/images/youtube_icon@3x.webp);
+}
+
+followimgflex div a {
+  width: 110px;
+  height: 27px;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100px;
+}
+
+
+
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
