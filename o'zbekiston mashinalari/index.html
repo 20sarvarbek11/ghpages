@@ -10,14 +10,121 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<body>
+</head>
+<style>
+    .button-group {
+        position: fixed;
+        bottom: 70px;
+        right: 30px;
+        width: 56px;
+        z-index: 1002
+    }
 
-    <header>
-        <ul>
-            <li><a href="../o'zbekiston mashinalari/index.html">o'zbekiston mashinalari</a></li>
-            <li><a href="../chet mashinalari/index.html">chet mashinalari</a></li>
-        </ul>
-    </header>
+    .mobile-contact__item,
+    .mobile-submenu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -moz-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end
+    }
+
+    .howtopag_item.pagactive {
+        background-color: #04AA6D !important;
+        color: white !important;
+    }
+
+    .howtopag_item {
+        display: table-cell;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        text-decoration: none;
+        border: none !important;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    a {
+        background-color: transparent;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    user agent stylesheet a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .howtopag {
+        display: table;
+        margin: auto;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .w3-white,
+    .w3-hover-white:hover {
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+
+    .w3-light-grey,
+    .w3-hover-light-grey:hover,
+    .w3-light-gray,
+    .w3-hover-light-gray:hover {
+        color: #000 !important;
+        background-color: #f1f1f1 !important;
+    }
+
+    html,
+    body {
+        font-family: Verdana, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+</style>
+
+<body>
+    <a style="text-align: -webkit-center" href="/08-05-2023/project/index.html">
+        <span>
+            <img src="/08-05-2023/project/o'zbekiston mashinalari/Без названия copy 3.ico" style="width: 20%;">
+        </span>
+    </a>
+    <br>
     <div class="container">
         <div id="myCarousel1" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -68,6 +175,13 @@
         </p>
     </div>
     <br>
+    <a2 href="https://www.youtube.com/watch?v=O8dt0iBxriA&list=PPSV">
+        <span>
+            <img"
+                src="data:image/jpeg;base64,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"
+                alt="">
+        </span>
+    </a2>
     <div class="container">
         <div id="myCarousel5" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -250,11 +364,7 @@
             ishlatishga qaror qilingan.
             batafsil: <a href="https://avtoelon.uz/uz/avto/daewoo/nexia/">Neksiya</a>
         </p>
-        <div class="!important">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odio id culpa. Numquam omnis tempore
-            voluptatem non sequi voluptate illum, dolore consequatur amet natus cupiditate expedita iusto eius neque
-            mollitia.
-        </div>
+
     </div>
     <div class="container">
         <div id="myCarousel15" class="carousel slide" data-ride="carousel">
@@ -269,7 +379,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="1-11-680x510 (1).jpg" alt="New york" style="width:100%;">
+                    <img src="1-11-680x510.jpg" alt="New york" style="width:100%;">
                 </div>
 
                 <div class="item">
@@ -281,7 +391,6 @@
                     <img src="photo_2022-12-16_14-28-30.jpg" alt="New york" style="width:100%;">
                 </div>
             </div>
-            Left and right controls
             <a class="left carousel-control" href="#myCarousel15" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
@@ -423,88 +532,130 @@
         <br>
     </div>
     <div class="container">
-        <div id="myCarousel9" class="carousel slide" data-ride="carousel">
+        <br>
+        <div id="nevyork11" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel9" data-slide-to="1"></li>
-                <li data-target="#myCarousel9" data-slide-to="2"></li>
+                <li data-target="#nevyork11" data-slide-to="0" class="active"></li>
+                <li data-target="#nevyork11" data-slide-to="1"></li>
+                <li data-target="#nevyork11" data-slide-to="2"></li>
             </ol>
-            <h1>Malibu</h1>
-
+            <h1>ONIX</h1>
+            <br>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
+
                 <div class="item active">
-                    <img src="malibumin.jpg" alt="New york" style="width:100%;">
+                    <img src="10.jpg" alt="Los Angeles" style="width:80%;">
+                    <div class="carousel-caption">
+                    </div>
                 </div>
 
                 <div class="item">
-                    <img src="malibumin3.jpg" alt="New york" style="width:100%;">
+                    <img src="12.jpg" alt="Chicago" style="width:80%;">
+                    <div class="carousel-caption">
+                    </div>
                 </div>
 
                 <div class="item">
-                    <img src="malibumin4.jpg" alt="New york" style="width:100%;">
+                    <img src="09.jpg" alt="New York" style="width:80%;">
+                    <div class="carousel-caption">
+
+                    </div>
                 </div>
-            </div>
-            Left and right controls
-            <a class="left carousel-control" href="#myCarousel9" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel9" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-        </div>
-        <p>
-
-            Yangi avlod Chevrolet Malibu ustida ishlayotgan dizaynerlar modelga tashqi ko'rinishda ko'proq tajovuzkorlik
-            berishga harakat qilishdi.Yangilik avvalgi avloddan farqli o'laroq, butunlay boshqacha tashqi dizaynga
-            ega.Buzilgan chiziqlar va egri chiziqlar mavjudligi sedanga dinamizm beradi va uni ayniqsa jozibali
 
 
-            Chevrolet Malibu ning yangi avlodi ustida ishlagan dizaynerlar, modelning tashqi ko‘rinishiga ko‘proq
-            agressivlik baxsh etishga intilgan. Yangi modeli avvalgi avlodlaridan farqli ravishda tashqi ko‘rinishining
-            mutlaqo yangi shakliga ega. Bukiluvchan va egiluvchan chiziqlar borligi tufayli sedanning qiyofasi yanada
-            ko‘proq jo‘shqinlikka ega bo‘lib, o‘ta yoqimli shakliga ega. Malibu ning oson tanib olish mumkin bo‘lgan
-            firmaviy ikkitalik radiator panjarasi endilikda torroq shakldagi asosiy svetodiodli optika bilan
-            jihozlangan. Kuzovning yon tomonlaridagi relefli bezaklari va orqa qismi ko‘p jihatdan Impala sedan modeliga
-            o‘xshash, umuman olganda esa kuzovning ko‘pchilik elementlari afsonaviy Camaro modeliga o‘xshaydi, lekin bu
-            faqat tashqi o‘xshashlikdir. Bunda kuzovning ayrim detallarini puxta ishlab chiqish hisobiga, a’lo
-            aerodinamik ko‘rsatkichlarga erishishga muvaffaq bo‘ldik. O‘zbekiston bozorida avtomobil 4 xil rangda taklif
-            qilinadi (oq marvarid, oq-kulrang, to‘q kulrang va qora ranglar).
-            batafsil: <a href="https://www.chevrolet.uz/malibu">Malibu</a>
-        </p>
-        <br>
-    </div>
-    <footer>
-        <ul class="recent_posts_list">
-            <li class="clearfix">
-                <a href="https://uzautomotors.com/companies/brend_chevrolet">
-                    <span>
-                        <img src="https://uzautomotors.com/chevro/images/logo.png">
-                    </span>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#nevyork11" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
+                <a class="right carousel-control" href="#nevyork11" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <p>
+                Ko’zga yaqqol tashlanuvchi dizayn detallari barchaning e’tiborini o’ziga tortishi aniq. Tashqi
+                ko’rinish, ichki qulaylik hamda havfsizlik
+                funksiyalarini ideal ravishda bir joyga to’plagan, aynan siz kutgan avtomobil siz uchun eng zarur, eng
+                qadrli hamda eng sevimli “do’stingizga”
+                aylanishi tabiiy.
+                LED kunduzi ishlaydigan chiroqlar, projektor uslubidagi faralar va LED orqa chiroqlar bilan
+                yo'llaringizni yoqing. Bundan tashqari,
+                oqshom sensori orqali faralarni avtomatik yoritish funktsiyasi bilan xavfsizligingizni oshiring.
+                Nafaqat hafvsizlik va dadil ko’rinish, sig’imlilik darajasining yuqoriligi ham alohida ta’kinlanishi
+                kerak bo’lgan jihati deb aytish mumkin.
+                Qayerga ketayotgan bo’lsangiz ham o’zingiz va atrofdagilaringiz uchun eng yaxshi taassurotlarni
+                olishingizga ishonamiz.
+                batafsil: <a href="https://chevrolet.uz/onix">Onix</a>
+
+            </p>
+        </div>
+    </div>
+    <div class="button-group">
+        <a class="back-top back-top--show" href="/08-05-2023/project/index.html">
+            <svg>
+                <use xlink:href="https://www.svgrepo.com/show/486620/corner-arrow-up-left.svg"></use>
+            </svg>
+        </a>
+        <a class="back-link" href="/08-05-2023/project/index.html" onclick="window.history.go(-1); return false;">
+            <svg>
+                <use xlink:href="https://thenounproject.com/icon/arrow-1287107/"></use>
+            </svg>
+        </a>
+    </div>
+    <br>
+    <div class="howtopag"><a class="howtopag_item" href="/08-05-2023/project/o'zbekiston mashinalari/index.html">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">❮</font>
+            </font>
+        </a><a class="howtopag_item" href="/08-05-2023/project/o'zbekiston mashinalari/index.html">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">1</font>
+            </font>
+        </a><a class="howtopag_item" href="/08-05-2023/project/chet mashinalari/index.html">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">2</font>
+            </font>
+        </a><a class="howtopag_item" href="/08-05-2023/project/chet mashinalari/index.html">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">❯</font>
+            </font>
+        </a></div>
+    <br>
+    <footer>
+        <br>
+        <br>
+        <h1>Barcha Avtomobil Markalari</h1>
+        <h3 style="text-align: center;">Barcha avtomobil markalari logotiplari va nomlarining
+            to'liq ro'yxati.
+        </h3>
+        <br>
+        <ul class="logo-list"">
+            <li class=" clearfix">
+            <a href="https://www.carlogos.org/car-brands/chevrolet-logo.html">
+
+                <img src="https://www.carlogos.org/car-logos/chevrolet-logo.png">
+            </a>
+            <label style="color: black;">Chevrolet</label>
+            <label>Omaviy bozor</label>
+            <label>avtomobillari</label>
+            <label>1911-Hozir</label>
             </li>
             <br>
             <li class="clearfix">
-                <a href="https://ru.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:BMW.svg">
+                <a href="https://www.carlogos.org/car-brands/bmw-logo.html">
                     <span class="daraht">
 
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/900px-BMW.svg.png">
+                        <img src="https://www.carlogos.org/car-logos/bmw-logo.png">
                     </span>
                 </a>
+                <label style="color: black;">BMW</label>
+                <label>hashamatli avtomabillar</label>
+                <label>1916-Hozir</label>
             </li>
-            <li class="clearfix">
-                <a href="https://ru.wikipedia.org/wiki/Hyundai_Motor">
-                    <span class="daraht">
 
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Hyundai_symbol.svg/1920px-Hyundai_symbol.svg.png">
-                    </span>
-                </a>
-            </li>
             <li class="clearfix">
                 <a href="https://www.carlogos.org/car-brands/tesla-logo.html">
                     <span class="daraht">
@@ -512,6 +663,12 @@
                         <img src="https://www.carlogos.org/car-logos/tesla-logo-2007-full-640.png">
                     </span>
                 </a>
+                <label style="color: black;">Tesla</label>
+                <label>hashamatli elektr</label>
+                <label>transport vositalari</label>
+                <label>2003 - Hozirgi</label>
+                <label>kungacha</label>
+
             </li>
             <li class="clearfix">
                 <a href="https://www.carlogos.org/car-brands/ford-logo.html">
@@ -520,6 +677,10 @@
                         <img src="https://www.carlogos.org/car-logos/ford-logo-2017-640.png">
                     </span>
                 </a>
+                <label style="color: black;">Ford</label>
+                <label>Omaviy bozor</label>
+                <label>avtomobillari</label>
+                <label>1903 yil - hozir kun</label>
             </li>
             <li class="clearfix">
                 <a href="https://www.carlogos.org/car-brands/porsche-logo.html">
@@ -528,14 +689,23 @@
                         <img src="https://www.carlogos.org/car-logos/porsche-logo-2014-full-640.png">
                     </span>
                 </a>
+                <label style="color: black;">Porsche</label>
+                <label>hashamatli sport</label>
+                <label>avtomabillar</label>
+                <label>1931 - hozir</label>
+
             </li>
             <li class="clearfix">
                 <a href="https://www.carlogos.org/car-brands/mercedes-benz-logo.html">
                     <span class="daraht">
 
-                        <img src="https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-640x369.jpg">
+                        <img src="https://www.carlogos.org/car-logos/mercedes-benz-logo.png">
                     </span>
                 </a>
+                <label style="color: black;">Mercedes-benz</label>
+                <label>hashamatli</label>
+                <label>avtomabillar</label>
+                <label>1926 - hozirdi kun</label>
             </li>
             <li class="clearfix">
                 <a href="https://www.carlogos.org/car-brands/honda-logo.html">
@@ -544,6 +714,336 @@
                         <img src="https://www.carlogos.org/car-logos/honda-logo-2000-full-640.png">
                     </span>
                 </a>
+                <label style="color: black;">Honda</label>
+                <label>Omaviy bozor</label>
+                <label>avtomobillari</label>
+                <label>1948 yil - Hozirgi</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/lamborghini-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/lamborghini-logo-1998-640.png">
+                    </span>
+                </a>
+                <label style="color: black;">Lamborghini</label>
+                <label>hashamatli sport</label>
+                <label>avtomabillar</label>
+                <label>1963 - Hozirgi</label>
+                <label>kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/toyota-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/toyota-logo.png">
+                    </span>
+                </a>
+                <label style="color: black;">Toyota</label>
+                <label>Omaviy bozor</label>
+                <label>avtomobillari</label>
+                <label>1937 - Hozirgi kungacha</label>
+            </li>
+            <br>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/bentley-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/bentley-logo-2002-640.png">
+                    </span>
+                </a>
+                <label style="color: black;">Bentley</label>
+                <label>Ultra hashamatli</label>
+                <label>avtomobillari</label>
+                <label>1919 - Hozir</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/maserati-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/maserati-logo.png">
+                    </span>
+                </a>
+                <label style="color: black;">Maserati</label>
+                <label>hashamatli</label>
+                <label>avtomabillar</label>
+                <label>1914 - Hozirgi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/audi-logo.html">
+
+                    <img src="https://www.carlogos.org/car-logos/audi-logo-2016-640.png">
+                </a>
+                <label style="color: black;">Audi</label>
+                <label>hashamatli</label>
+                <label>avtomabillar</label>
+                <label>1909 - hozirdi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/hyundai-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/hyundai-logo-2011-640.png">
+                    </span>
+                </a>
+                <label style="color: black;">Hyundai</label>
+                <label>Omaviy bozor</label>
+                <label>avtomobillari</label>
+                <label>1967 - Hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/bugatti-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/bugatti-logo.png">
+                    </span>
+                </a>
+                <label style="color: black;">Bugatti</label>
+                <label>hashamatli superkar</label>
+                <label>1909 - hozirdi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/nissan-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/nissan-logo-2020-black-show.png">
+                    </span>
+                </a>
+                <label style="color: black;">Nissan</label>
+                <label>Omaviy bozor</label>
+                <label>avtomobillari</label>
+                <label>1933 - Hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/rolls-royce-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/rolls-royce-logo.png">
+                    </span>
+                </a>
+                <label style="color: black;">Rolls-Royce</label>
+                <label>Ultra hashamatli</label>
+                <label>avtomobillari</label>
+                <label>1906 - Hozirgi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/lada-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/lada-logo.png">
+                    </span>
+                </a>
+                <label style="color: black;">Ladaa</label>
+                <label>Yilni mashinasi</label>
+                <label>1966 - Hozir kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/lagonda-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/lagonda-logo.png">
+                    </span>
+                </a>
+                <label style="color: black;">Lagonda</label>
+                <label>Ultra hashamatli</label>
+                <label>avtomobillari</label>
+                <label>1906 - Hozirgi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/arash-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/logo/Arash-logo-640x410.png">
+                    </span>
+                </a>
+                <label style="color:black;">Arash</label>
+                <label>sport avtomabillar</label>
+                <label>1999 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/laraki-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/laraki-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Laraki</label>
+                <label>Hashamatli sport avtomobillari</label>
+                <label>1999 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/ford-mustang-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/ford-mustang-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Ford Mustang</label>
+                <label>Sport avtomobillari</label>
+                <label>1964 yil - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/volkswagen-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/volkswagen-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Volkswagen</label>
+                <label>Ommaviy bozor avtomobillari</label>
+                <label>1937 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/infiniti-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/infiniti-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Infiniti</label>
+                <label>Hashamatli avtomobillar</label>
+                <label>1989 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/pontiac-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/pontiac-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Pontiak</label>
+                <label>Hashamatli avtomobillar</label>
+                <label>1926-2010 yillar</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/genesis-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/genesis-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Ibtido</label>
+                <label>Hashamatli avtomobillar</label>
+                <label>2015 - Hozir</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/suzuki-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/suzuki-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Suzuki</label>
+                <label>Iqtisodiy avtomobillar</label>
+                <label>1909 yil - hozirgi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/mini-logo.html">
+                    <span class="daraht">
+                        <img src="https://www.carlogos.org/car-logos/mini-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Mini</label>
+                <label>Hashamatli kichik avtomobillar</label>
+                <label>1959 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/great-wall-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/great-wall-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Buyuk devor</label>
+                <label>Yilni SUVlar</label>
+                <label>1984 yil - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/proton-logo.html">
+                    <span class="daraht">
+                        <img src="https://www.carlogos.org/car-logos/proton-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Proton</label>
+                <label>Iqtisodiy avtomobillar</label>
+                <label>1983 yil - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/lobini-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/lobini-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Lobini</label>
+                <label>Sport avtomobillari</label>
+                <label>1999 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/oldsmobile-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/oldsmobile-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Oldsmobile</label>
+                <label>Hashamatli avtomobillar</label>
+                <label>1897-2004 yillar</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/renault-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/renault-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Renault</label>
+                <label>Ommaviy bozor avtomobillari</label>
+                <label>1899 - hozirgi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/buick-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/buick-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Buick</label>
+                <label>Mass-Market Cars</label>
+                <label>1903-Present</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/cadillac-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/cadillac-logo-2021-full-640.png">
+                    </span>
+                </a>
+                <label style="color:black;">Cadillac</label>
+                <label>Hashamatli avtomobillar</label>
+                <label>1902 - hozirgi kun</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/dodge-viper-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/dodge-viper-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">Dodge Viper</label>
+                <label>Sport avtomobillari</label>
+                <label>1992 - hozirgi kungacha</label>
+            </li>
+            <li class="clearfix">
+                <a href="https://www.carlogos.org/car-brands/zaz-logo.html">
+                    <span class="daraht">
+
+                        <img src="https://www.carlogos.org/car-logos/zaz-logo.png">
+                    </span>
+                </a>
+                <label style="color:black;">ZAZ</label>
+                <label>Iqtisodiy avtomobillar</label>
+                <label>1923 yil - hozirgi kun</label>
             </li>
         </ul>
     </footer>
