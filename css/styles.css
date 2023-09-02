@@ -275,3 +275,96 @@ img {
 .demo:hover {
   opacity: 1;
 }
+
+.logo-list {
+  font-size: 0;
+}
+
+.logo-list li {
+  width: 130px;
+  height: 220px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+
+.find-by-cnt dd,
+.find-by-tag dd,
+.custom-list li div,
+.lo-like dd,
+.logo-list li,
+.logo-summary li,
+.sub-logo li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.find-by-cnt dd,
+.find-by-tag dd,
+.custom-list li div,
+.lo-like dd,
+.logo-list li,
+.logo-summary li,
+.sub-logo li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+body {
+  background: #fff;
+  color: #000000;
+  font-size: 15px;
+  font-family: Segoe UI, system-ui, -apple-system, sans-serif;
+}
+
+.logo-list li label:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.logo-list li label {
+  display: block;
+  color: #757575;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+label {
+  color: transparent;
+  text-shadow: 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo-list li a {
+  display: inline-block;
+  font-size: 19px;
+  line-height: 20px;
+}
+
+a {
+  color: #181818;
+  text-decoration: none;
+}
+
+.logo-list li {
+  width: 130px;
+  height: 220px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 8px -1px rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+
+body {
+  background: #fff;
+  color: #181818;
+  font-size: 15px;
+  font-family: Segoe UI, system-ui, -apple-system, sans-serif;
+}
