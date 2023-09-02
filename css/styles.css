@@ -120,30 +120,7 @@ footer {
 
 }
 
-/* .wrapper  {
-  list-style: none;
-}
 
-.wrapper-item {
-  height: auto;
-  border-bottom: 2px dashed blue;
-
-}
-
-.wrapper-item-body {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  gap: 50px;
-
-}
-
-
-.wrapper-item-phone {
-  height: 360px;
-} */
 
 .ol,
 ul {
@@ -363,14 +340,6 @@ body {
   color: #181818;
   font-size: 15px;
   font-family: Segoe UI, system-ui, -apple-system, sans-serif;
-}
-
-
-
-
-.title {
-  max-width: 1010px;
-  margin: auto;
 }
 
 body {
