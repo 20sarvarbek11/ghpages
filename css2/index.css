@@ -11,19 +11,21 @@ header {
 }
 
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 398px 531px;
     overflow: hidden;
     font-size: larger;
     filter: drop-shadow(2px 4px 6px black);
+    justify-content: space-evenly;
 }
 
 li {
     float: left;
     background-color: black;
     border-radius: 50px;
-    margin: -16px 46px;
+    /* margin: -16px 46px; */
 }
 
 li a {
