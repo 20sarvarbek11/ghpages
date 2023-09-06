@@ -251,14 +251,11 @@ img {
 
 .logo-list {
   font-size: 0;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-=======
->>>>>>> d28f987080cc96aceb8b0771b16982aafa89519e
 }
 
 .logo-list li {
@@ -569,10 +566,6 @@ img {
   border-style: none;
   height: auto
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> d28f987080cc96aceb8b0771b16982aafa89519e
 .back-link,
 .back-top {
   display: none;
@@ -601,7 +594,6 @@ img {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex
-<<<<<<< HEAD
 }
 
 
@@ -630,6 +622,3 @@ img {
   background: #02adb5;
   color: #fff;
 }
-=======
-} 
->>>>>>> d28f987080cc96aceb8b0771b16982aafa89519e
