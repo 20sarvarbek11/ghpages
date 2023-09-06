@@ -36,7 +36,7 @@ li a {
 }
 
 a {
-    border-radius: 100%;
+    border-radius: 50px;
     box-sizing: 100%;
 }
 
@@ -46,4 +46,31 @@ a {
 
 .main-text {
     color: #ffffff;
+}
+
+.genetik{
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.img{
+    width: 100px;
+}
+
+.header-link{
+    animation: animation 1s infinite;
+}
+
+@keyframes animation {
+    0%{
+        box-shadow: 0 0 0 0 green;
+    }
+    50%{
+        box-shadow: 0 0 20px 0 green;
+
+    }
+    100%{
+        box-shadow: 0 0 0 0 green;
+    }
 }

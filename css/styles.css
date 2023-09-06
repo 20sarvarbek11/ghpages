@@ -251,6 +251,11 @@ img {
 
 .logo-list {
   font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .logo-list li {
@@ -561,6 +566,7 @@ img {
   border-style: none;
   height: auto
 }
+
 .back-link,
 .back-top {
   display: none;
@@ -589,4 +595,31 @@ img {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex
-} 
+}
+
+
+#scrolltop {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(top.png) no-repeat center center;
+  z-index: 998;
+  background-size: 100%;
+  opacity: .33;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all .1s;
+}
+
+* {
+  font-size: 16px;
+  font-family: roboto, arial, "sans-serif";
+  word-break: break-all;
+}
+
+::selection {
+  background: #02adb5;
+  color: #fff;
+}
