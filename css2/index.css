@@ -25,7 +25,6 @@ li {
     float: left;
     background-color: black;
     border-radius: 50px;
-    /* margin: -16px 46px; */
 }
 
 li a {
@@ -34,12 +33,11 @@ li a {
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    background-color: black;
+    background-color: green;
 }
 
 a {
     border-radius: 50px;
-    box-sizing: 100%;
 }
 
 .main {
