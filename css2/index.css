@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #6f6f6f;
+    color: #ffffff;
+}
+
+header {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 398px 531px;
+    overflow: hidden;
+    font-size: larger;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+li {
+    float: left;
+    background-color: black;
+    border-radius: 50px;
+    margin: -16px 46px;
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background-color: black;
+}
+
+a {
+    border-radius: 100%;
+    box-sizing: 100%;
+}
+
+.main {
+    text-align: center;
+}
+
+.main-text {
+    color: #ffffff;
+}
