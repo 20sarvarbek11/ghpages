@@ -14,7 +14,7 @@ ul {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 398px 531px;
+    padding: 305px 531px;
     overflow: hidden;
     font-size: larger;
     filter: drop-shadow(2px 4px 6px black);
@@ -33,7 +33,7 @@ li a {
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    background-color: green;
+    background-color: red;
 }
 
 a {
@@ -64,13 +64,13 @@ a {
 
 @keyframes animation {
     0%{
-        box-shadow: 0 0 0 0 green;
+        box-shadow: 0 0 0 0 red;
     }
     50%{
-        box-shadow: 0 0 20px 0 green;
+        box-shadow: 0 0 30px 0 red;
 
     }
     100%{
-        box-shadow: 0 0 0 0 green;
+        box-shadow: 0 0 0 0 red;
     }
 }
