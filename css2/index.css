@@ -59,7 +59,7 @@ a {
 }
 
 .header-link{
-    animation: animation 1s infinite;
+    animation: animation 0.5s infinite;
 }
 
 @keyframes animation {
@@ -67,7 +67,7 @@ a {
         box-shadow: 0 0 0 0 red;
     }
     50%{
-        box-shadow: 0 0 30px 0 red;
+        box-shadow: 0 0 40px 0 red;
 
     }
     100%{
