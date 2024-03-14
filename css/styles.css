@@ -315,8 +315,8 @@ label {
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: initial;
   list-style: none;
 }
 
