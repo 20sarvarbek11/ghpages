@@ -3,20 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mashinalar</title>
+	<title>Uz avto</title>
 	<link rel="stylesheet" href="./css2/index.css">
 	<script src="./js/index.js"></script>
 	<link rel="icon" type="image/x-icon"
 		href="https://yt3.googleusercontent.com/zGx7rF53u3lRpIbKCOLWpWMc_KsTyWTSJ8lRl-MLrAXdVvRmQt0SG-L80e7qsRaiyoyD2KwR6A=s176-c-k-c0x00ffffff-no-rj">
 </head>
 <style>
-	body,
-	html {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		font-family: Arial, Helvetica, sans-serif;
-		margin: 0;
+	body {
+		font-family: "Lato", sans-serif;
+	}
+
+	.sidepanel {
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		height: 250px;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+
+	.sidepanel a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidepanel a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidepanel .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+	}
+
+	.openbtn {
+		width: 308px;
+		height: 55px;
+		font-size: 20px;
+		cursor: pointer;
+		background-color: #111;
+		color: white;
+		padding: 10px 15px;
+		border: none;
+	}
+
+	.openbtn:hover {
+		background-color: #444;
 	}
 
 	.hero-image {
@@ -103,12 +146,32 @@
 
 <body>
 	<br>
+	<div id="mySidepanel" class="sidepanel">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="./BMW/index.html">BMW</a>
+		<a href="./Gelik/index.html">Gelik</a>
+		<a href="./Lamborgini/index.html">Lamborgini</a>
+		<a href="./Bugatti/index.html">Bugatti</a>
+	</div>
+
+	<button class="openbtn" onclick="openNav()">☰ Mashinalar</button>
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidepanel").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidepanel").style.width = "0";
+		}
+	</script>
+	<br>
 
 	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 	<div id="id01" class="modal">
 
-		<form class="modal-content animate" action="https://www.w3schools.com/howto/img_avatar2.png" method="post">
+		<form class="modal-content animate" action="" method="post">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close"
 					title="Close Modal">&times;</span>
