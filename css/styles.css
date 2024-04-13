@@ -71,7 +71,7 @@ label {
   margin: 10px;
 }
 
-iframe {
+.iframe {
   width: 80%;
   height: 80%;
 }
@@ -85,17 +85,12 @@ iframe {
   gap: 12px;
 }
 
-.wrapper-option {
-  width: 100%;
-  display: inline-table;
-}
-
 .carousel-indicators {
   display: flex;
   justify-content: center;
   bottom: 412px;
 }
-
+/* kerak  */
 .carousel slide {
   width: 50%;
   height: 50%;
@@ -117,10 +112,6 @@ ul {
   bottom: 150px;
 }
 
-a {
-  color: inherit;
-}
-
 img {
   width: 100px;
 }
@@ -128,10 +119,6 @@ img {
 body {
   font-family: Arial;
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 img {
@@ -171,31 +158,7 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
+.active {
   opacity: 1;
 }
 
@@ -290,10 +253,6 @@ body {
   font-family: Segoe UI, system-ui, -apple-system, sans-serif;
 }
 
-element.style {
-  --headerScrollHeight: 66.925px;
-}
-
 body {
   margin: 0;
   position: relative;
@@ -305,86 +264,34 @@ body {
 
 .btn,
 body {
-  font-family: IBM Plex Sans, sans-serif;
-}
-
-.btn,
-body {
   background: #fff;
-}
-
-*,
-:after,
-:before {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #adacac;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #8e8e8e;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
+  font-family: IBM Plex Sans, sans-serif;
 }
 
 a {
   text-decoration: underline
 }
 
-img,
-main {
+img{
   display: block
 }
 
-button,
-hr,
-input {
+.button{
   overflow: visible
 }
 
-img,
-legend {
+.img {
   max-width: 100%
 }
 
-progress,
-sub,
 sup {
   vertical-align: baseline
 }
 
-b,
-strong {
-  font-weight: bolder
-}
-
-small {
-  font-size: 80%
-}
-
-sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative
-}
-
-sub {
-  bottom: -.25em
 }
 
 img {
