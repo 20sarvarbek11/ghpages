@@ -115,14 +115,7 @@ body {
     margin: 0;
 }
 
-/* .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://frankfurt.apollo.olxcdn.com/v1/files/rgzweoc401hk1-UZ/image;s=1000x700");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-} */
+
 
 body {
     margin: 0;
@@ -130,7 +123,7 @@ body {
 
 .icon-bar {
     width: 100px;
-    background-color: #555;
+    background-color: #585252;
     height: auto;
     display: flex;
     flex-direction: column;
